@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        section {
+            display: flex;
+        }
+
+        article {
+            flex-grow: 400px;
+            flex-basis: 1;
+            border: 1px solid black;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        h3 {
+            margin 10px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+    <main>
+        <h2>undetitel</h2>
+        <section>
+            <article>
+                <img src="https://placeimg.com/400/300/animals" alt="hund" class="first">
+                <h3>aricle 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quae voluptatibus fugiat sint, ducimus, earum quaerat ut, necessitatibus pariatur perspiciatis enim minima in! Modi placeat corporis saepe eum nemo, illo reiciendis eveniet nostrum soluta magnam, officiis. Ea quis fugiat sed aperiam amet illo mollitia, praesentium perspiciatis sequi magnam. Obcaecati ut aperiam fugit similique eaque consectetur quibusdam distinctio nobis itaque impedit, asperiores quos id possimus tempora neque culpa, quasi sunt illo cumque debitis necessitatibus. Voluptas ratione dolorum impedit. Provident iste eaque corporis quo recusandae quas rerum voluptate mollitia non fugit molestiae earum, nisi sed, aperiam, blanditiis maxime. Nulla laboriosam asperiores sit.</p>
+            </article>
+            <article>
+                <img src="https://placeimg.com/400/300/animals" alt="hund" class="first">
+                <h3>aricle 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quae voluptatibus fugiat sint, ducimus, earum quaerat ut, necessitatibus pariatur perspiciatis enim minima in! Modi placeat corporis saepe eum nemo, illo reiciendis eveniet nostrum soluta magnam, officiis. Ea quis fugiat sed aperiam amet illo mollitia, praesentium perspiciatis sequi magnam. Obcaecati ut aperiam fugit similique eaque consectetur quibusdam distinctio nobis itaque impedit, asperiores quos id possimus tempora neque culpa, quasi sunt illo cumque debitis necessitatibus. Voluptas ratione dolorum impedit. Provident iste eaque corporis quo recusandae quas rerum voluptate mollitia non fugit molestiae earum, nisi sed, aperiam, blanditiis maxime. Nulla laboriosam asperiores sit.</p>
+            </article>
+        </section>
+    </main>
+    <footer>This is the footer</footer>
+
+    <script>
+        const text = document.querySelector("p");
+        console.log(text.textContent);
+        const articleFirstChild = document.querySelector("article:first-child,h3");
+        console.log(articleFirstChild);
+        const articleFirstChildOverskrift = document.querySelector8 "(article:first-child,h3)";
+        console.log(articleFirstChildOverskrift);
+        const articleFirstChildImg = document.querySelector("article:first-child,img");
+        console.log(articleFirstChildImg);
+        const article2 = document.querySelector("article:nth-child(2)");
+        console.log(article2);
+        const article2Img = document.querySelector("article:nth-child(2), img");
+        console.log(article2Img);
+        const article2Overskrift = document.querySelector("article:nth-child(2), h3");
+        console.log(article2Overskrift);
+
+    </script>
+</body>
+
+</html>
