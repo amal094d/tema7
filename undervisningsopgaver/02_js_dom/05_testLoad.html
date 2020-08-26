@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        section {
+            display: flex;
+        }
+
+        article {
+            flex-grow: 400px;
+            flex-basis: 1;
+            border: 1px solid black;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        h3 {
+            margin 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+    <main>
+        <h2>undetitel</h2>
+        <section>
+            <article>
+                <img src="https://placeimg.com/400/300/animals" alt="" class="first">
+                <h3>article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quae voluptatibus fugiat sint, ducimus, earum quaerat ut, necessitatibus pariatur perspiciatis enim minima in! Modi placeat corporis saepe eum nemo, illo reiciendis eveniet nostrum soluta magnam, officiis. Ea quis fugiat sed aperiam amet illo mollitia, praesentium perspiciatis sequi magnam. Obcaecati ut aperiam fugit similique eaque consectetur quibusdam distinctio nobis itaque impedit, asperiores quos id possimus tempora neque culpa, quasi sunt illo cumque debitis necessitatibus. Voluptas ratione dolorum impedit. Provident iste eaque corporis quo recusandae quas rerum voluptate mollitia non fugit molestiae earum, nisi sed, aperiam, blanditiis maxime. Nulla laboriosam asperiores sit.</p>
+            </article>
+            <article>
+                <img src="https://placeimg.com/400/300/animals" alt="">
+                <h3>article 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quae voluptatibus fugiat sint, ducimus, earum quaerat ut, necessitatibus pariatur perspiciatis enim minima in! Modi placeat corporis saepe eum nemo, illo reiciendis eveniet nostrum soluta magnam, officiis. Ea quis fugiat sed aperiam amet illo mollitia, praesentium perspiciatis sequi magnam. Obcaecati ut aperiam fugit similique eaque consectetur quibusdam distinctio nobis itaque impedit, asperiores quos id possimus tempora neque culpa, quasi sunt illo cumque debitis necessitatibus. Voluptas ratione dolorum impedit. Provident iste eaque corporis quo recusandae quas rerum voluptate mollitia non fugit molestiae earum, nisi sed, aperiam, blanditiis maxime. Nulla laboriosam asperiores sit.</p>
+            </article>
+        </section>
+    </main>
+    <footer>This is the footer</footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded");
+
+        function start() {
+            alert("DOM er loaded!");
+        }
+        /*
+                const pic1 = document.querySelector("article:nth-child(1), img");
+                console.log(pic1);
+                pic1.src = "kat.jpg";
+                pic1.alt = "missekat";
+
+                let mainSection = document.querySelector("section");
+
+                // ny article
+                let newArticle = document.createElement("article");
+                // nyt h3 element
+                let overskrift = document.createElement("h3");
+                // tekst til overskrift
+                let overskriftText = document.createTextNode("Article 3");
+                // indsæt tekst i overskrift
+                overskrift.appendChild(overskriftText);
+                // tilføl overskrift til article
+                newArticle.appendChild(overskrift);
+                // tilføj article til section
+                mainSection.appendChild(newArticle);
+    </script>
+</body></html>
